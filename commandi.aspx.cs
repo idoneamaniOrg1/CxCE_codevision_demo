@@ -12,7 +12,8 @@ namespace CxCE_Demo
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            string processtostart = systemname.Text;
+            string processtostart = Sanitizer.SanitizeInput(systemname.Text);
+
             Process.Start(processtostart);
         }
     }
