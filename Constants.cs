@@ -7,17 +7,8 @@ using System.Configuration;
 namespace CxCE_Demo
 {
 
-
-class PasswordExample
-{
-    public static string GetPassword()
-    {
-        return ConfigurationManager.AppSettings["password"];
-    }
-}
-
     class Constants
     {
-        public static string DB_PASSWORD = PasswordExample.GetPassword();
+       public static string DB_PASSWORD = "Checkmarx123!";
     }
 }
