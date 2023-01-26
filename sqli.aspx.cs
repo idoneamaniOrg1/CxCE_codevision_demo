@@ -38,7 +38,7 @@ namespace CxCE_Demo
                 age = getAge(username);
             }
 
-            message.Text = "Welcome " + username;
+            message.Text = "Welcome " + AntiXss.HtmlEncode(username);
             conn.Close();
         }
 
